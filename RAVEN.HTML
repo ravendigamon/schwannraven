@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic HTML Animation</title>
+<style>
+    /* Define the styles for the animated element */
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        animation: move 2s infinite alternate; /* Animation name, duration, and iteration */
+    }
+
+    /* Define the animation */
+    @keyframes move {
+        0% { left: 0; } /* Starting position */
+        100% { left: 200px; } /* Ending position */
+    }
+</style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
